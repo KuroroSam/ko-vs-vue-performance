@@ -2,8 +2,13 @@ window.onload = function () {
      console.time('ko');
      var t0 = performance.now();
     $.material.init();
-   
+
+//#1 KO Observable array all items   
 var data = {items : ko.observableArray([])};
+
+//#2 Plain array
+//var data = {items : []};
+
 var noOfItems = 5000;
 for (var index = 0; index < noOfItems; index++) {
     data.items.push({ message: 'Magic ' + index });

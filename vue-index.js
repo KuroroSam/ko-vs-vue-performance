@@ -7,7 +7,7 @@ console.time('vue');
 var t0 = performance.now();
 $.material.init();
 
-  example1 = new Vue({
+example1 = new Vue({
   el: '#example-1',
   data: {
     items: [
